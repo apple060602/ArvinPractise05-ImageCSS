@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60710145</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+        }
+        /* 會把空間分配給其他人 */
+        .box{
+            flex-grow: 1;
+            outline: 1px solid #000000;
+            height: 100%;
+            transition: .3s;
+        }
+        .box:nth-child(1){
+            background-image: url(https://picsum.photos/1000/1000?random=1);
+            background-position: center;
+        }
+        .box:nth-child(2){
+            background-image: url(https://picsum.photos/2000/2000?random=2);
+            background-position: center;
+        }
+        .box:nth-child(3){
+            background-image: url(https://picsum.photos/1000/1000?random=3);
+            background-position: center;
+        }
+        .box:nth-child(4){
+            background-image: url(https://picsum.photos/1000/1000?random=4);
+            background-position: center;
+        }
+        .box:nth-child(5){
+            background-image: url(https://picsum.photos/1000/1000?random=5);
+            background-position: center;
+        }
+        .cont{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .6);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            transition: .3s;
+        }
+        span{
+            color: aliceblue;
+            text-transform: uppercase;
+            font-size: 30px;
+
+            padding: 10px 20px;
+            transition: .3s;
+        }
+        .box:hover{
+            flex-grow: 3;
+        }
+        .cont:hover{
+            background-color: transparent;
+        }
+        .box:hover span{
+            letter-spacing: 10px;
+            background-color: rgba(255, 255, 255, .7);
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="cont"><span>item01</span></div>
+    </div>
+    <div class="box">
+        <div class="cont"><span>item02</span></div>
+    </div>
+    <div class="box">
+        <div class="cont"><span>item03</span></div>
+    </div>
+    <div class="box">
+        <div class="cont"><span>item04</span></div>
+    </div>
+    <div class="box">
+        <div class="cont"><span>item05</span></div>
+    </div>
+</body>
+</html>
